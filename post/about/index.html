@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>关于 | victor-crypto</title>
-<link rel="shortcut icon" href="https://www.victor-crypto.com/favicon.ico?v=1580844449795">
+<link rel="shortcut icon" href="https://www.victor-crypto.com/favicon.ico?v=1580847405573">
 <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://www.victor-crypto.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="关于 | victor-crypto - Atom Feed" href="https://www.victor-crypto.com/atom.xml">
@@ -28,7 +28,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://www.victor-crypto.com">
-  <img class="avatar" src="https://www.victor-crypto.com/images/avatar.png?v=1580844449795" alt="">
+  <img class="avatar" src="https://www.victor-crypto.com/images/avatar.png?v=1580847405573" alt="">
   </a>
   <h1 class="site-title">
     victor-crypto
@@ -125,28 +125,25 @@
 
         
           
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-<div id="gitalk-container"></div>
+          
+            <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+
+<div id="disqus_thread"></div>
 
 <script>
 
-  var gitalk = new Gitalk({
-    clientID: '6403ce0484cd8cf77077',
-    clientSecret: '399f47b6539997cb80027059ec3ae0d8bdc84552',
-    repo: 'victor-crypto.Github.io',
-    owner: 'victor-crypto',
-    admin: ['victor-crypto'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
+var options = {
+  shortname: '',
+  apikey: '',
+}
+if ('') {
+  options.api = ''
+}
+var dsqjs = new DisqusJS(options)
 
 </script>
-
-          
 
           
         
